@@ -1,0 +1,12 @@
+<div>
+  <h1>Aggiungi alla lista</h1>
+  <p>
+    Inserisci qualche cosa
+    <input type="text" [(ngModel)] = "testo" class>
+    <button (click) = "bho()" class="btn">Save</button>
+  </p>
+  <h2>Elementi della lista</h2>
+  <ol >
+    <li *ngFor ="let x of lista" >{{x}}</li>
+  </ol>
+</div>
